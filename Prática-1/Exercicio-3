@@ -1,0 +1,31 @@
+; Prática 1
+; Exercicio 3
+
+; Criar uma tabela de números pares na memória do Atmega2560 a partir do endereço 0x200, contendo 2, 4, 6, 8, 10 e 12, utilizando os dados armazenados nos registradores.
+
+inicio:
+	ldi r16,0x2
+		mov r0,r16
+		sts 0x200,r0
+		mov r1,r0
+		inc r1
+		inc r1
+		sts 0x201,r1
+		mov r2,r1
+		inc r2
+		inc r2
+		sts 0x202,r2
+		mov r3,r2
+		inc r3
+		inc r3
+		sts 0x203,r3
+		mov r4,r3
+		inc r4
+		inc r4
+		sts 0x204,r4
+		mov r5,r4
+		inc r5
+		inc r5
+		sts 0x205,r5
+		break
+
