@@ -5,7 +5,7 @@
 
 
 inicio:
-	ldi r0,r16,0x2
+	ldi r16,0x2
 	add r6,r0
 	mov r1,r0
 	inc r1
