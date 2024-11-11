@@ -1,0 +1,36 @@
+; Prática 1
+
+; Exercicio 4
+
+; Elaborar um programa que armazene uma tabela de três números pares subsequentes ao número 0xF0, armazenando-os a partir do endereço 0x200; armazenar uma tabela com três número impares subsequentes ao número 0x5, armazenando-os a partir do endereço 0x210; armazenar a multiplicação dos pares pelos respectivos impares na ordem da lista nos endereços a partir de 0x220.
+
+inicio:
+	ldi r16,0xf0
+	ldi r17,0x5
+	ldi r18,0x2
+
+	sts 0x200,r16
+	sts 0x210,r17
+	muls r16,r17
+	sts 0x220,r0
+	sts 0x221,r1
+
+	add r18,r16
+	add r18,r17
+
+	sts 0x201,r16
+	sts 0x211,r17
+	muls r16,r17
+	sts 0x222,r0
+	sts 0x223,r1
+
+	add r18,r16
+	add r18,r17
+
+	sts 0x202,r16
+	sts 0x212,r17
+	muls r16,r17
+	sts 0x224,r0
+	sts 0x225,r1
+
+	break
