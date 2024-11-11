@@ -1,4 +1,5 @@
-; Prática 2 - Assembly
+; Prática 1 - Assembly
+; Exercicio 2
 
 ; Elaborar um programa em assembly para inicializar os registradores r0 a r5 do processador do Atmega2560 com 2, 4, 6, 8, 10 e 12. Em seguida, somar os valores, acumulando o resultado da soma no registrador r6.
 
